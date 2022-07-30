@@ -27,12 +27,11 @@ class App extends React.Component {
     var Frases = new Array()
     var Authors = ["– Jeff Bezos de Amazon.","– Thomas Edison.","– Steve Jobs","– Bill Gates","Rodolfo Bravo"]
     
-    Frases[0] = "Si en los inicios no puedes alimentar a tu equipo con 2 pizzas, es que es demasiado grande"
-    Frases[1] = "El valor de una idea radica en el uso de la misma";
-    Frases[2] = "El trabajo va a ocupar gran parte de tu vida. La única forma de estar realmente satisfecho";
-    Frases[3] = "Tus clientes más insatisfechos deben ser tu mayor fuente de aprendizaje";
-    //quinta posición
-    Frases[4] = "Una visión de una idea sin la capacidad de ejecución es únicamente una alucinación";
+    Frases[0] = " If at the beginning you can't feed your team with 2 pizzas, it's too big"
+    Frases[1] = " The value of an idea lies in the use of it";
+    Frases[2] = " Work is going to take up a large part of your life. The only way to be truly satisfied";
+    Frases[3] = " Your most dissatisfied customers should be your greatest source of learning";
+    Frases[4] = " A vision of an idea without the ability to execute is just a hallucination";
 
     // Calculamos la longitud del array (el resultado será el número de frases)
     var Q = Frases.length;
@@ -61,7 +60,7 @@ class App extends React.Component {
             <span className='col-12 text-center' style={{ color: this.state.color }}><i class="fa-solid fa-quote-left"></i>{this.state.text} <i class="fa-solid fa-quote-right"></i></span>
           </div>
           <div className='row' id='author'>
-            <span className='col-xs-2 col-sm-3 text-end' style={{ color: this.state.color }}>{this.state.author}</span>
+            <span className='col-xs-4 col-sm-4 text-end' style={{ color: this.state.color }}>{this.state.author}</span>
           </div>
           <div className='row' id='icons'>
             <div className='col-xs-3 col-sm-6 d-flex justify-content-start mb-3'>
